@@ -1,0 +1,23 @@
+{
+  "name": "Social Timer",
+  "version": "0.0.1",
+  "description": "Measures time spent on social websites.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "persistent": false,  
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "*://*.facebook.com/*"
+  ],
+  "page_action": {
+    "default_name": "View Chart",
+    "default_icon": "clock.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
